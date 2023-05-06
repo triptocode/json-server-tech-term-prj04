@@ -1,0 +1,85 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
+    }
+  ],
+  "words": [
+    {
+      "id": 3,
+      "day": 3,
+      "eng": "DOM",
+      "kor": "문서객체모델",
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "day": 2,
+      "eng": "variable ",
+      "kor": "변수",
+      "isDone": false
+    },
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "parentheses",
+      "kor": "소괄호",
+      "isDone": false
+    },
+    {
+      "id": 2,
+      "day": 2,
+      "eng": "array",
+      "kor": "배열",
+      "isDone": false
+    },
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "object",
+      "kor": "객체",
+      "isDone": false
+    },
+    {
+      "id": 1,
+      "day": 1,
+      "eng": "parameter",
+      "kor": "매개변수",
+      "isDone": false
+    },
+    {
+      "id": 3,
+      "day": 3,
+      "eng": "constant",
+      "kor": "상수 (JS의 const)",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "day": 4,
+      "eng": "loop",
+      "kor": "반복",
+      "isDone": false
+    },
+    {
+      "id": 4,
+      "day": 4,
+      "eng": "String",
+      "kor": "문자열",
+      "isDone": false
+    }
+  ]
+}
