@@ -58,12 +58,16 @@
 // 브라우저의 slow3G + loading
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import Spinnner from "../assets/spinner.gif"
+
 
 export default function DayList(){
 
     const days = useFetch("http://localhost:4000/days")
 
-    if(days.length===0){return <span> 로딩중...(잠시만 기다리세요.) </span>}
+    // if(days.length===0){return <span> 로딩중...(잠시만 기다리세요.) </span>}
+    if(days.length===0){ return  <img src={Spinnner} alt="로딩중" width="20%"/> }
+
 
 
 
