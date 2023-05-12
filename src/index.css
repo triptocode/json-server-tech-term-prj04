@@ -26,7 +26,7 @@ a {
 }
 
 .App {
-  width: 800px;
+  width: 1600px;
   margin: 0 auto;
 }
 
@@ -84,6 +84,10 @@ table td {
 
 table td:first-child {
   width: 10%;
+}
+
+table td:nth-child(3) {
+  width: 40%;
 }
 
 .off td {
