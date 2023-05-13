@@ -15,10 +15,6 @@
     {
       "day": 4,
       "id": 4
-    },
-    {
-      "day": 5,
-      "id": 5
     }
   ],
   "words": [
@@ -41,13 +37,13 @@
       "day": 3,
       "eng": "DOM",
       "kor": "문서객체모델",
-      "isDone": true
+      "isDone": false
     },
     {
       "id": 3,
       "day": 3,
-      "eng": "DOM",
-      "kor": "문서객체모델",
+      "eng": "checked",
+      "kor": "checkbox/ radio 체크상태 여부",
       "isDone": false
     },
     {
@@ -119,6 +115,27 @@
       "kor": "양식이 제출되거나 특정 event가 발생할 때,  url을 조작",
       "isDone": false,
       "id": 6
+    },
+    {
+      "day": "4",
+      "eng": "useNavigate()",
+      "kor": "페이지이동 ( with 조건: 이벤트, 로직 )",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "day": "3",
+      "eng": "POST / PUT / GET / DELETE",
+      "kor": "생성 / 수정 / 조회 / 삭제",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": "1",
+      "eng": "int",
+      "kor": "숫자타입",
+      "isDone": false,
+      "id": 9
     }
   ]
 }

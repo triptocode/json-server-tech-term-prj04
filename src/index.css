@@ -92,7 +92,8 @@ table td:nth-child(3) {
 
 .off td {
   background: #eee;
-  color: #ccc;
+  /* color: #ccc; */
+  color:darkgray
 }
 
 .btn_del {
@@ -133,4 +134,18 @@ button {
   width: 400px;
   height: 40px;
   font-size: 20px;
+}
+
+/* 새로추가 for CreateDay.js */
+.create_day_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create_day_box{
+  position: absolute;
+  top:50%;
+
+ 
 }

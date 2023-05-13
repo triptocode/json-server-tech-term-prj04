@@ -32,7 +32,9 @@
 
 
 
-// // 2) put / delete 중에 delete 만됨 
+
+
+// // 2) put + delete 중에 delete 만됨 
 
 // import { useState } from "react";
 
@@ -58,7 +60,7 @@
 //             })
 //         }).then(res=>{
 //             if(res.ok){ // 정상적으로 update됐을 경우 isDone변수 또한 바꿔줌
-//                 setIsDone(!isDone)
+//               setIsDone(!isDone)
 //             }
 //       });
 //     }
@@ -121,27 +123,20 @@ export default function Word({word: w}){
 
     function toggleDone(){
         setIsDone(!isDone);
+        console.log('onChange감지 --> function toogleDone 함수동작')
     }
 
-
-          function del() {
+   function del() {
         if (window.confirm("삭제 하시겠습니까?")) {
-          fetch(`http://localhost:4000/words/${word.id}`, {
-            method: "DELETE",
-          }).then(res => {
-            if (res.ok) {
-              setWord({
-                ...word,
-                id: 0,
-              });
-            }
-          });
+            fetch(`http://localhost:4000/words/${word.id}`, {
+              method: "DELETE",
+            }).then(res => {
+              if (res.ok) { setWord({ ...word, id: 0,});}
+            });
         }
       }
 
-      if (word.id === 0) {
-        return null;
-      }
+      if (word.id === 0) { return null;}
 
     return (
             <tr className={isDone ? "off":""}>

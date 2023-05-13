@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import useFetch from "../hooks/useFetch";
+import { useNavigate } from "react-router-dom";
 
 export default function CreateWord() {
   const days = useFetch("http://localhost:4000/days");
+  const navigate = useNavigate();
+
   
   function onSubmit(e) {
     e.preventDefault();
@@ -25,6 +28,7 @@ export default function CreateWord() {
       }).then(res => {
         if (res.ok) {
           alert("생성이 완료 되었습니다");
+          navigate(`/day/${dayRef.current.value}`);
         }
       });
     }
