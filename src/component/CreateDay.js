@@ -9,19 +9,19 @@ export default function CreateDay() {
 
   function addDay() {
     fetch(`http://localhost:4000/days/`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        day: days.length + 1,
-      }),
-    }).then(res => {
-      if (res.ok) {
-        alert("생성이 완료 되었습니다");
-        navigate(`/`);
-      }
-    });
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            day: days.length + 1,
+          }),
+        }).then(res => {
+          if (res.ok) {
+            alert("생성이 완료 되었습니다");
+            navigate(`/`);
+          }
+      });
   }
   return (
     <div className="create_day_container">

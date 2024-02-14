@@ -128,15 +128,12 @@ export default function Word({word: w}){
 
    function del() {
         if (window.confirm("삭제 하시겠습니까?")) {
-            fetch(`http://localhost:4000/words/${word.id}`, {
-              method: "DELETE",
-            }).then(res => {
-              if (res.ok) { setWord({ ...word, id: 0,});}
-            });
+            fetch(`http://localhost:4000/words/${word.id}`, {method: "DELETE"})
+                  .then(res => {if (res.ok) { setWord({ ...word, id: 0,});}});
         }
-      }
+  }
 
-      if (word.id === 0) { return null;}
+  if (word.id === 0) { return null;}
 
     return (
             <tr className={isDone ? "off":""}>

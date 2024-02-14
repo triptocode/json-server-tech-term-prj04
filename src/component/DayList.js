@@ -1,3 +1,6 @@
+//  json-server --watch ./src/db/data.json --port 4000 
+
+
 // import dummy from "../db/data.json";
 // import { Link } from "react-router-dom";
 
@@ -21,8 +24,8 @@
 
 
 
-// //  json Server API에서 받아오는걸로해서 dummy 는 지움 
-// // 커스텀훅스 useFetch.js파일로 반복코드 분리된 상태
+// // //  json Server API에서 받아오는걸로해서 dummy 는 지움 
+// // // 커스텀훅스 useFetch.js파일로 반복코드 분리된 상태
 // import { Link } from "react-router-dom";
 // import useFetch from "../hooks/useFetch";
 
@@ -67,6 +70,8 @@ export default function DayList(){
 
     // if(days.length===0){return <span> 로딩중...(잠시만 기다리세요.) </span>}
     if(days.length===0){ return  <img src={Spinnner} alt="로딩중" width="20%"/> }
+
+
 
 
 
